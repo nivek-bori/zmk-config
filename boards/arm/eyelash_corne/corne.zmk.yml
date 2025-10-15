@@ -1,5 +1,5 @@
 file_format: "1"
-id: eyelash_corne
+id: corne
 name: Eyelash Corne
 url: https://github.com/a741725193/zmk-new_corne
 type: board
@@ -13,5 +13,5 @@ outputs:
   - usb
   - ble
 siblings:
-  - eyelash_corne_left
-  - eyelash_corne_right
+  - corne_left
+  - corne_right
