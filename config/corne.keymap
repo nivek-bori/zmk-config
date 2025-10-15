@@ -30,12 +30,6 @@
 
 / {
     behaviors {
-        td0: td0 {
-            compatible = "zmk,behavior-tap-dance";
-            display-name = "Shift/Caps";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
-        };
     };
 
     rgb_encoder: rgb_encoder {
@@ -68,7 +62,7 @@
             display-name = "QWERTY";
             bindings = <
 &kp TAB                    &kp Q                      &kp W                      &kp E                      &kp R                      &kp T                                                                            &kp UP                                                &kp Y                      &kp U                      &kp I                      &kp O                      &kp P                      &kp LALT L
-&td0                       &kp A                      &kp S                      &kp D                      &kp F                      &kp G                                                 &kp LEFT                   &kp LCLK                   &kp RIGHT                  &kp H                      &kp J                      &kp K                      &kp L                      &kp SEMI                   &kp ENTER
+&kp CAP                    &kp A                      &kp S                      &kp D                      &kp F                      &kp G                                                 &kp LEFT                   &kp LCLK                   &kp RIGHT                  &kp H                      &kp J                      &kp K                      &kp L                      &kp SEMI                   &kp ENTER
 &kp LSHIFT                 &kp Z                      &kp X                      &kp C                      &kp V                      &kp B                      &kp C_MUTE                                            &kp DOWN                                              &kp N                      &kp M                      &kp COMMA                  &kp DOT                    &kp FSLH                   &kp RSHIFT
                                                                                  &kp LGUI                   &kp LCTRL                  &kp LALT                                                                                                                               &mo 1                      &lt 3 SPACE                &mo 2
             >;
@@ -79,9 +73,9 @@
         symbol_layer {
             display-name = "SYMBOL";
             bindings = <
-&trans                      &kp LCTRL LALT K          &kp LGUI LCTRL SPACE      &kp LCTRL LALT C          &kp LCTRL LALT SPACE      &kp LCTRL LALT M                                                              &kp LCTRL UP                                        &none                     &kp LPAR                  &kp RPAR                  &none                     &none                     &trans
-&td0 LCTRL                  &kp LCTRL LALT A          &kp LCTRL LALT F          &kp LCTRL LALT X          &kp LCTRL LALT P          &kp LCTRL LALT S                                    &kp LCTRL LEFT            &kp LCLK                  &kp LCTRL RIGHT           &none                     &kp LBRC                  &kp RBRC                  &kp GRAVE                 &kp SQT                   &kp DQT
-&trans                      &kp LCTRL LALT Z          &kp LCTRL LALT E          &kp LCTRL LALT N          &kp LCTRL LALT G          &kp LGUI LCTRL C          &kp C_MUTE                                          &kp LCTRL DOWN                                      &none                     &kp LBKT                  &kp RBKT                  &kp PIPE                  &kp BSLH                  &trans
+&trans                      &kp LCTRL LALT K          &kp LCTRL LALT E          &kp LCTRL LALT M          &kp LCTRL LALT S          &kp LCTRL LALT F                                                              &kp LCTRL UP                                        &none                     &kp LPAR                  &kp RPAR                  &none                     &none                     &trans
+&kp LCTRL CAPS              &kp LCTRL LALT A          &kp LCTRL LALT X          &kp LCTRL LALT SPACE      &kp LCTRL LALT P          &kp LCTRL LALT G                                    &kp LCTRL LEFT            &kp LCLK                  &kp LCTRL RIGHT           &none                     &kp LBRC                  &kp RBRC                  &kp GRAVE                 &kp SQT                   &kp DQT
+&trans                      &kp LCTRL LALT Z          &kp LCTRL LALT C          &kp LCTRL LALT N          &kp LCTRL LALT G          &kp LGUI LCTRL C          &kp C_MUTE                                          &kp LCTRL DOWN                                      &none                     &kp LBKT                  &kp RBKT                  &kp PIPE                  &kp BSLH                  &trans
                                                                                 &trans                    &trans                    &trans                                                                                                                            &trans                    &trans                    &trans
             >;  
 
@@ -93,7 +87,7 @@
             bindings = <
 &trans                      &kp N1                     &kp N2                     &kp N3                     &kp N4                     &kp N5                                                                           &kp UP                                                &kp N6                     &kp N7                     &kp N8                     &kp N9                     &kp N0                     &none
 &trans                      &kp EXCL                   &kp AT                     &kp HASH                   &kp DLLR                   &kp PRCNT                                             &kp LEFT                   &kp LCLK                   &kp RIGHT                  &kp CARET                  &kp AMPS                   &kp STAR                   &kp PLUS                   &kp MINUS                  &kp EQUAL
-&trans                      &kp none                   &kp none                   &kp none                   &kp none                   &kp none                   &kp C_MUTE                                            &kp DOWN                                              &none                      &none                      &kp COMMA                  &kp STAR                   &kp FSLH                   &trans
+&trans                      &none                      &none                      &none                      &none                      &none                   &kp C_MUTE                                            &kp DOWN                                              &none                      &none                      &kp COMMA                  &kp STAR                   &kp FSLH                   &trans
                                                                                   &trans                     &trans                     &trans                                                                                                                                 &trans                     &trans                     &trans
             >;
 
@@ -103,9 +97,9 @@
         fn_layer {
             display-name = "Fn";
             bindings = <
-&none                      &rgb_ug RGB_HUI             &rgb_ug RGB_SAI             &rgb_ug RGB_SPI             &rgb_ug RGB_BRI             &rgb_ug RGB_EFF                                                                   &kp UP                                                &none                      &none                      &none                      &none                      &none                      &bt BT_SEL 0
+&kp INSERT                 &rgb_ug RGB_HUI             &rgb_ug RGB_SAI             &rgb_ug RGB_SPI             &rgb_ug RGB_BRI             &rgb_ug RGB_EFF                                                                   &kp UP                                                &none                      &none                      &none                      &none                      &none                      &bt BT_SEL 0
 &none                      &rgb_ug RGB_HUD             &rgb_ug RGB_SAD             &rgb_ug RGB_SPD             &rgb_ug RGB_BRD             &rgb_ug RGB_TOG                                        &kp LEFT                   &kp LCLK                   &kp RIGHT                  &none                      &none                      &none                      &none                      &none                      &bt BT_SEL 1
-&none                      &none                       &none                       &none                       &none                       &none                       &ect_power EP_OFF                                     &kp DOWN                                              &none                      &none                      &none                      &none                      &none                      &bt BT_SEL 2
+&none                      &none                       &none                       &none                       &none                       &none                       &ext_power EP_OFF                                     &kp DOWN                                              &none                      &none                      &none                      &none                      &none                      &bt BT_SEL 2
                                                                                    &trans                     &trans                      &trans                                                                                                                                   &trans                     &trans                     &trans
             >;
 
