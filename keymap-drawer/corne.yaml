@@ -14,7 +14,7 @@ layers:
   - O
   - P
   - LALT L
-  - '&td0'
+  - CAP
   - A
   - S
   - D
@@ -52,10 +52,10 @@ layers:
   SYMBOL:
   - {t: '$$mdi:transfer$$', type: trans}
   - LCTRL LALT K
-  - LGUI LCTRL SPACE
-  - LCTRL LALT C
-  - LCTRL LALT SPACE
+  - LCTRL LALT E
   - LCTRL LALT M
+  - LCTRL LALT S
+  - LCTRL LALT F
   - LCTRL UP
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - (
@@ -63,12 +63,12 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&td0 LCTRL'
+  - LCTRL CAPS
   - LCTRL LALT A
-  - LCTRL LALT F
   - LCTRL LALT X
+  - LCTRL LALT SPACE
   - LCTRL LALT P
-  - LCTRL LALT S
+  - LCTRL LALT G
   - LCTRL LEFT
   - LCLK
   - LCTRL RIGHT
@@ -80,7 +80,7 @@ layers:
   - '"'
   - {t: '$$mdi:transfer$$', type: trans}
   - LCTRL LALT Z
-  - LCTRL LALT E
+  - LCTRL LALT C
   - LCTRL LALT N
   - LCTRL LALT G
   - LGUI LCTRL C
@@ -128,11 +128,11 @@ layers:
   - {t: '-', s: _}
   - {t: '=', s: +}
   - {t: '$$mdi:transfer$$', type: trans}
-  - none
-  - none
-  - none
-  - none
-  - none
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:volume-off$$
   - $$mdi:arrow-down-bold$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -148,7 +148,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   Fn:
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - Ins
   - RGB HUI
   - RGB SAI
   - RGB SPI
@@ -182,7 +182,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - '&ect_power EP_OFF'
+  - EP OFF
   - $$mdi:arrow-down-bold$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
